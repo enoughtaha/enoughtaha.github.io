@@ -1,53 +1,50 @@
-html {
-    height: 100%;
-    width: 100%;
-    background-image: url("images/nyc.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+@media only screen and (max-width: 767px) {
+    html {
+        text-align: center;
+        font-family: 'Bungee Outline', cursive;
 
-    text-align: center;
-    align-items: center;
-}
+        background-image: url("images/nyc.jpg");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 
-.title{
-    font-family: 'Bungee Outline', cursive;
+    .title {
+        font-size: 14vw;
+        color: #ffffff;
+        padding: 0;
+    }
 
-    color: #ffffff;
-    font-size: 100px;
+    .sub-title {
+        font-family: 'Bungee Hairline', cursive;
+        font-size: 8vw;
+        color: #ffffff;
+    }
 
-    margin-top: 5%;
-}
+    .main-button {
+        font-family: 'Bungee Hairline', cursive;
+        font-size: 7.5vw;
+        color: #ffffff;
+        margin-top: 5vw;
 
-.main-button {
-    font-family: 'Bungee Hairline', cursive;
+        width: 70%;
 
-    color: #ffffff;
-    font-size: 40px;
-    background: rgba(150, 150, 150, 0.1);
+        border-style: solid;
+        border-color: #ffffff;
+        border-width: 0.5vw;
+        border-radius: 2vw;
 
-    margin-top: 21%;
-    margin-left: 3.5%;
-    margin-right: 3.5%;
+        background-color: rgba(100, 100, 100, 0.3);
+        outline: 0;
+    }
+    .main-button:hover {
+        background-color: rgba(100, 100, 100, 0.9);
+    }
+    .main-button-push {
+        margin-top: 47.5vw;
+    }
 
-    outline: 0;
-
-    border-width: 1px;
-    border-radius: 10px;
-    border-color: #ffffff;
-    border-style: solid;
-
-    transition: all 0.3s ease;
-}
-.main-button:hover {
-    background: rgba(150, 150, 150, 0.5);
-}
-
-.unselectable {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    .transition-all {
+        transition: all 0.25s ease;
+    }
 }
