@@ -1,0 +1,53 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-image: url("images/nyc.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    text-align: center;
+    align-items: center;
+}
+
+.title{
+    font-family: 'Bungee Outline', cursive;
+
+    color: #ffffff;
+    font-size: 100px;
+
+    margin-top: 5%;
+}
+
+.main-button {
+    font-family: 'Bungee Hairline', cursive;
+
+    color: #ffffff;
+    font-size: 40px;
+    background: rgba(150, 150, 150, 0.1);
+
+    margin-top: 21%;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+
+    outline: 0;
+
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: #ffffff;
+    border-style: solid;
+
+    transition: all 0.3s ease;
+}
+.main-button:hover {
+    background: rgba(150, 150, 150, 0.5);
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
