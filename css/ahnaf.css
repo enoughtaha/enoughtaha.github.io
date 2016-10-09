@@ -1,5 +1,10 @@
 @media only screen and (max-width: 767px) {
 
+    ul {
+    padding: 0;
+    list-style-type: none;
+}
+
     html {
         text-align: center;
         font-family: 'Bungee Outline', cursive;
@@ -46,6 +51,67 @@
     }
     .main-button-push {
         margin-top: 47.5%;
+    }
+
+    .transition-all {
+        transition: all 0.25s ease;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    ul {
+        padding: 0;
+        list-style-type: none;
+    }
+    html {
+        text-align: center;
+        font-family: 'Bungee Outline', cursive;
+        margin: 0;
+        padding: 0;
+
+        background: url(images/nyc.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .title {
+        font-size: 7vw;
+        color: #ffffff;
+        padding: 0;
+    }
+
+    .sub-title {
+        font-family: 'Bungee Hairline', cursive;
+        font-size: 3.5vw;
+        color: #ffffff;
+    }
+
+    .main-button {
+        font-family: 'Bungee Hairline', cursive;
+        font-size: 3vw;
+        color: #ffffff;
+        margin-top: 5%;
+
+        width: 20%;
+        margin-left: 2%;
+        margin-right: 2%;
+
+        border-style: solid;
+        border-color: #ffffff;
+        border-width: 0.1vw;
+        border-radius: 0.4vw;
+
+        background-color: rgba(100, 100, 100, 0.3);
+        outline: 0;
+    }
+    .main-button:hover {
+        background-color: rgba(100, 100, 100, 0.9);
+    }
+    .main-button-push {
+
     }
 
     .transition-all {
