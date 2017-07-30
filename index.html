@@ -8,20 +8,40 @@
 
         <title>Ahnaf Taha</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Graduate|Bungee+Outline" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600,700|Muli:400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/ahnaf.css">
+
     </head>
 
     <body>
-        <h1 class="title unselectable">Ahnaf Taha</h1>
+        <div id="info-box" class="title-box">
+            <h1 class="name-title">AHNAF TAHA</h1>
+            <h1 class="subtitle">finance, tech, design</h1>
+        </div>
 
-            <h1 class="sub-title unselectable">Humanitarian</h1>
-            <h1 class="sub-title unselectable">Coder</h1>
-            <h1 class="sub-title unselectable">Entrepreneur</h1>
+        <div id="line"></div>
 
-        <button onclick="window.open('https://www.linkedin.com/in/ahnaftahasteam');" class="main-button main-button-push transition-all">LinkedIn</button>
-        <button onclick="window.open('ATResume.pdf');" class="main-button transition-all">Resume</button>
-        <button onclick="window.open('https://github.com/enoughtaha');" class="main-button transition-all">Github</button>
+        <div id="info-box" class="button-box">
+            <h1 id="box-title">ABOUT ME</h1>
+            <p>I am currently a senior at The Masters School, an independent boarding school located in Dobbs Ferry, New York. While many people with experience in coding say that it is their primary interest, I choose to see my talents with technology as tools. I use these tools and combine them with other passions such as economics and finance, as well as visual design. Over the past few years I have gotten involved in numerous endeavors with technology, from coding at non-profit organizations such as Young Hackers and All Star Code to making clothes and building photography portfolios.</p>
+            <button class="click resume" onclick="window.open('media/Ahnaf Taha Resume.pdf');">Resume</button>
+        </div>
+
+        <div id="line"></div>
+
+        <div id="info-box" class="contact-box">
+            <h1 id="box-title">CONTACT ME</h1>
+            <ul>
+                <li><button onclick="window.open('https://www.linkedin.com/in/ahnaftaha');" class="click">LinkedIn</button></li>
+                <li><button onclick="window.open('https://github.com/enoughtaha');" class="click">Github</button></li>
+                <li><button class="click">347 586 4581</button></li>
+                <li><button class="click">ahnaf.taha@mastersny.org</button></li>
+            </ul>
+
+        </div>
+
+        <script src="js/ahnaf.js"></script>
     </body>
 
 </html>
