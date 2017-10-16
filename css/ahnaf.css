@@ -9,8 +9,8 @@ html {
 }
 
 .pola {
-    width: 80vw;
-    height: 97.16vw;
+    width: 90vw;
+    height: 109.305vw;
     background-color: white;
     padding-top: 2%;
 
@@ -33,10 +33,10 @@ html {
     margin-top: 5vh;
     font-family: 'Reenie Beanie', cursive;
     font-size: 15vw;
+    color: rgb(0, 0, 0);
 }
 
 .title {
-    text-shadow: -0.3vw -0.3vw 0 #57d1ff;
 }
 .small {
     font-size: 7vw;
