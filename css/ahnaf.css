@@ -4,6 +4,11 @@ html {
     background-color: rgb(237, 237, 237);
     color: black;
     height: 200vh;
+
+    font-family: 'Raleway', sans-serif;
+}
+#main-page {
+    height: 100vh
 }
 #top-block {
     width: 100%;
@@ -44,6 +49,36 @@ html {
     .small {
         font-size: 7vw;
     }
+#contact-box {
+    width: 90vw;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 1.5vw 1.5vw 1.5vw #888888;
+    margin-top: 6vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+.scode {
+    color: black;
+    font-size: 8vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+#about {
+    height: 100vh;
+}
+.about-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 8vw;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1.5vh;
+}
+.about-p {
+    font-size: 5vw;
+    margin: 0;
+    padding: 0;
+}
 
 #nav-box {
     width: 90vw;
@@ -70,13 +105,6 @@ html {
     padding: none;
 
     outline: none;
-}
-
-.scode {
-    color: black;
-    font-size: 8vw;
-    margin-left: 3vw;
-    margin-right: 3vw;
 }
 
 
