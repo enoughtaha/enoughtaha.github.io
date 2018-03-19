@@ -1,3 +1,7 @@
+var moving = false;
+
+$("#about").on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){ console.log("hi"); });
+
 $(".about").click(function(){
     $("#intro").transition({ y: '-100vh', duration: 1000 });
     $("#about").transition({ y: '0', duration: 1000 });

@@ -98,7 +98,15 @@
         top: 100vh;
 
         background-color: #F0F0C9;
+
+        text-align: center;
     }
+        #about-head {
+            width: 100%;
+            height: 10vh;
+
+            background-color: #D74E09;
+        }
 
     #work {
         width: 100vw;
@@ -110,6 +118,12 @@
 
         background-color: #F0F0C9;
     }
+        #work-head {
+            width: 100%;
+            height: 10vh;
+
+            background-color: #D74E09;
+        }
 
     #contact {
         width: 100vw;
@@ -121,6 +135,12 @@
 
         background-color: #F0F0C9;
     }
+        #contact-head {
+            width: 100%;
+            height: 10vh;
+
+            background-color: #D74E09;
+        }
 
     #info-box {
         width: 18vw;
