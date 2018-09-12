@@ -5,25 +5,194 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 
-        <!--Developed by Ahnaf Taha; External tools used inclufe Google Fonts, FontAwesome, Normalize.css, JQuery, Transit.js.
-            Want a website? Well you're on mine, so I assume contacting me is straightforward.//-->
-
         <title>Ahnaf Taha</title>
+
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
         <link rel="stylesheet" href="css/ahnaf.css">
 
+        <!--Implement Icon/Favicon Here
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
-
+        -->
     </head>
 
     <body>
-        <header>
+        <div id="particles-js"></div>
 
-        </header>
+        <div id="nav-bar">
+            <div id="left-nav">
+                <button id="nav-home-button">AHNAF</button>
+            </div>
 
+            <div id="right-nav">
+                <button id="nav-about-button" class="nav-button">About Me</button>
+                <button id="nav-work-button" class="nav-button">My Work</button>
+                <button id="nav-contact-button" class="nav-button">Contact Me</button>
+            </div>
+        </div>
 
+        <div id="webpage-total">
+
+            <div id="movement-links">
+                <div id="movement-links-box">
+                    <button onclick=" window.open('https://github.com/enoughtaha','_blank')" id="movement-git" class="movement-button">
+                        <i class="movement-icon fab fa-github"></i>
+                        <h1 class="unselectable movement-text">Github</h1>
+                    </button>
+
+                    <button onclick=" window.open('media/AhnafTahaResume.pdf','_blank')" id="movement-resume" class="movement-button">
+                        <i class="movement-icon fas fa-file"></i>
+                        <h1 class="unselectable movement-text">Resume</h1>
+                    </button>
+
+                    <button onclick=" window.open('https://www.linkedin.com/in/ahnaftaha/','_blank')" id="movement-linked" class="movement-button">
+                        <i class="movement-icon fab fa-linkedin"></i>
+                        <h1 class="unselectable movement-text">LinkedIn</h1>
+                    </button>
+                </div>
+            </div>
+
+            <div id="intro">
+                <div id="intro-title-box">
+                    <h1 class="intro-title unselectable">AHNAF TAHA</h1>
+                    <h1 class="intro-subtitle unselectable"></h1>
+                </div>
+
+                <div id="intro-nav-buttons">
+                    <button id="workButton" class="intro-button right-border">
+                        <i class="intro-icon fas fa-briefcase"></i>
+                        <h1 class="unselectable button-text">My Work</h1>
+                    </button>
+                     <button id="aboutButton" class="intro-button right-border left-border">
+                        <i class="intro-icon fas fa-user-circle"></i>
+                        <h1 class="unselectable button-text">About Me</h1>
+                    </button>
+                    <button id="contactButton" class="intro-button left-border">
+                        <i class="intro-icon fas fa-envelope"></i>
+                        <h1 class="unselectable button-text">Contact Me</h1>
+                     </button>
+                </div>
+            </div>
+
+            <div id="about">
+                <div id="about-container">
+                    <p class="about-paragraph">
+When my family had its first home computer, my life changed completely. Being able to use a computer opened up a path for me to learn and understand as much as I could about technology, from how operating systems are developed to how websites are designed. However, coding and tech is not all that drives me. I see my skills in computer programming as a tool that I can combine with other passions. Stretching from coding scripts that analyze trends in the fashion industry to algorithms in quantitative stock trading, tech is always part of an interdisciplinary effort for me.
+                    </p>
+                    <div id="about-bullet-box">
+                        <div id="about-bullet-box-left">
+                            <h1 class="about-bullet"><i class="fas fa-graduation-cap"></i></h1>
+                        </div>
+
+                        <div id="about-bullet-box-right">
+                            <h1 class="about-bullet">Claremont McKenna College '22</h1>
+                        </div>
+                    </div>
+                    <h1 class="about-mini-bullet">Economics and Psychology Dual Major, Computer Science Minor</h1>
+                    <div id="about-bullet-box">
+                        <div id="about-bullet-box-left">
+                            <h1 class="about-bullet"><i class="fas fa-map-marker"></i></h1>
+                        </div>
+
+                        <div id="about-bullet-box-right">
+                            <h1 class="about-bullet">SoCal and NYC</h1>
+                        </div>
+                    </div>
+                    <h1 class="about-mini-bullet">SoCal for school, NYC for home</h1>
+                    <div id="about-bullet-box">
+                        <div id="about-bullet-box-left">
+                            <h1 class="about-bullet"><i class="fas fa-music"></i></h1>
+                        </div>
+
+                        <div id="about-bullet-box-right">
+                            <h1 class="about-bullet">Rap, Hip Hop, R&B</h1>
+                        </div>
+                    </div>
+                    <h1 class="about-mini-bullet">Travis Scott, Frank Ocean, Phoebe Bridgers, Playboi Carti</h1>
+                    <div id="about-bullet-box">
+                        <div id="about-bullet-box-left">
+                            <h1 class="about-bullet"><i class="fas fa-book"></i></h1>
+                        </div>
+
+                        <div id="about-bullet-box-right">
+                            <h1 class="about-bullet">Sci-fi Fiction, Tech and Econ Nonfiction</h1>
+                        </div>
+                    </div>
+                    <h1 class="about-mini-bullet">Weapons of Math Destruction by Cathy O'Neil</h1>
+                    <div id="about-bullet-box">
+                        <div id="about-bullet-box-left">
+                            <h1 class="about-bullet"><i class="fas fa-film"></i></h1>
+                        </div>
+
+                        <div id="about-bullet-box-right">
+                            <h1 class="about-bullet">Comicbooks, Crime, Drama, Comedy</h1>
+                        </div>
+                    </div>
+                    <h1 class="about-mini-bullet">The Departed, Goodfellas, The Dark Knight, Bojack Horseman</h1>
+                </div>
+            </div>
+
+            <div id="work">
+                <div id="work-container">
+                    <div id="work-carousel-container">
+                        <div class="owl-carousel">
+                            <div class="work-caro-container">
+                                <h1 class="work-title">TEDxTheMastersSchool</h1>
+                                <div class="videoWrapper">
+                                    <iframe width=""src="https://www.youtube.com/embed/n8g8Q7HscAg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+                                <p class="work-explanation">
+                                    In my TEDx talk, I provide my analysis and understanding of how diversity is a necessity for the tech industry. Beginning with the current state of diversity in tech, I also talk about how companies are facing issues building products accessible for all customers due to a lack of different perspectives in product design (as well as subsequent scandals in tech companies).
+                                </p>
+                            </div>
+
+                            <div class="work-caro-container">
+                                <h1 class="work-title">WeClean</h1>
+                                <div class="work-weclean-container">
+                                    <img class="work-weclean-image" onclick="window.open('media/WeCleanDocumentation.pdf','_blank')" src="media/wecleanlogo.png"/>
+                                </div>
+                                <p class="work-explanation">
+WeClean is an app focused on collecting user-sourced data on public trash to propose laws for curbing pollution in certain areas. Prototyped in the Lua coding language, WeClean is a winner of the 2016 ESA LOFT Innovation Fellowship, which gave me the opportunity to speak with officials in federal agencies as well as lawmakers in Congress to see how the app and its algorithms could be used to aid in combatting pollution. Click on the logo for more information!</p>
+                            </div>
+
+                            <div class="work-caro-container">
+                                <h1 class="work-title">VincentAlban.com</h1>
+                                <div class="work-vincent-container">
+                                    <img class="work-vincent-image" onclick="window.open('http://vincentalban.com','_blank')" src="media/vincentalban_screen.png"/>
+                                </div>
+                                <p class="work-explanation">
+VincentAlban.com is the website of a young and talented photographer named Vincent Alban. My work on his website started two years ago, and since then I have been continuously maintaining the website in addition to building design overhauls every few months. Click on the image above to see his amazing photography!                            </div>
+                        </div>
+                    </div>
+                    <div id="work-nav">
+                        <div id="work-nav-container">
+                            <button class="directional" id="work-prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="directional" id="work-next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact">
+                <div id="contact-container">
+
+                </div>
+            </div>
+        </div>
     </body>
 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/regular.js" integrity="sha384-t7yHmUlwFrLxHXNLstawVRBMeSLcXTbQ5hsd0ifzwGtN7ZF7RZ8ppM7Ldinuoiif" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/stats.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/ahnaf.js"></script>
 </html>

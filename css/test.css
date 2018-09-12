@@ -1,0 +1,88 @@
+*.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+@font-face {
+font-family: "GeoFont";
+src: url("css/fonts/Harabara.woff") format("truetype")
+}
+
+html {
+    text-align: center;
+    background-color: black;
+
+    color: white;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 769px) {
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    #webpage-total {
+        position: absolute;
+    }
+
+    #nav-bar {
+        position: fixed;
+        z-index: 500;
+
+        width: 100vw;
+        height: 10vh;
+
+        background-color: white;
+    }
+
+    #intro {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+
+    }
+        #title {
+            font-family: 'GeoFont', sans-serif;
+            font-weight: 200;
+            font-size: 6rem;
+        }
+
+    #about {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #work {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #contact {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+}
