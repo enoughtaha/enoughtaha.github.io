@@ -56,7 +56,7 @@ particlesJS('particles-js',
     },
     "move": {
       "enable": true,
-      "speed": 2,
+      "speed": 4,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -114,6 +114,17 @@ particlesJS('particles-js',
 );
 
 $('#nav-bar').hide();
+$('#mobile-nav-bar').hide();
+
+navRef = $('#nav-bar');
+
+
+if ($( window ).width() > 768) {
+    navRef = $('#nav-bar');
+    console.log('hi');
+} else {
+    navRef = $('#mobile-nav-bar');
+}
 
 vh = $(window).height()/100;
 vw = $(window).width()/100;
@@ -124,9 +135,9 @@ vw = $(window).width()/100;
         $(window).scroll(function () {
 
             if ($(this).scrollTop() > $(window).height() * 0.5) {
-                $('#nav-bar').fadeIn(300);
+                navRef.fadeIn(300);
             } else {
-                $('#nav-bar').fadeOut(300);
+                 navRef.fadeOut(300);
             }
         });
     });
@@ -134,28 +145,105 @@ vw = $(window).width()/100;
 });
   }(jQuery));
 
+$(".contact-email").click(function(){
+    window.open('mailto:ataha22@cmc.edu', '_blank');
+});
+
+  $("#mobile-nav-extend").click(function() {
+      if ($("#mobile-nav-extension").height() == 0){
+          $("#mobile-nav-extension").height(30.35*vh);
+      } else if ($("#mobile-nav-extension").height() > (29*vh)){
+          $("#mobile-nav-extension").height(0);
+      }
+
+  });
+
   $("#workButton").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#work").offset().top-(15*vh)},
-        'slow');
+      if ($( window ).width() > 768) {
+          $('html,body').animate({
+              scrollTop: $("#work").offset().top-(15*vh)},
+              'slow');
+      } else {
+          $('html,body').animate({
+              scrollTop: $("#work").offset().top-(10*vh)},
+              'slow');
+      }
+
 });
 
 $("#aboutButton").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#about").offset().top-(15*vh)},
-        'slow');
+    if ($( window ).width() > 768) {
+        $('html,body').animate({
+            scrollTop: $("#about").offset().top-(15*vh)},
+            'slow');
+    } else {
+        $('html,body').animate({
+            scrollTop: $("#about").offset().top-(10*vh)},
+            'slow');
+    }
 });
 
 $("#contactButton").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#contact").offset().top-(15*vh)},
-        'slow');
+    if ($( window ).width() > 768) {
+        $('html,body').animate({
+            scrollTop: $("#contact").offset().top-(15*vh)},
+            'slow');
+    } else {
+        $('html,body').animate({
+            scrollTop: $("#contact").offset().top-(10*vh)},
+            'slow');
+    }
+});
+
+$("#about-nav-e").click(function() {
+    if ($( window ).width() > 768) {
+        $('html,body').animate({
+            scrollTop: $("#about").offset().top-(15*vh)},
+            'slow');
+    } else {
+        $('html,body').animate({
+            scrollTop: $("#about").offset().top-(10*vh)},
+            'slow');
+        $("#mobile-nav-extension").height(0);
+    }
+});
+
+$("#work-nav-e").click(function() {
+    if ($( window ).width() > 768) {
+        $('html,body').animate({
+            scrollTop: $("#work").offset().top-(15*vh)},
+            'slow');
+    } else {
+        $('html,body').animate({
+            scrollTop: $("#work").offset().top-(10*vh)},
+            'slow');
+        $("#mobile-nav-extension").height(0);
+    }
+});
+
+$("#contact-nav-e").click(function() {
+    if ($( window ).width() > 768) {
+        $('html,body').animate({
+            scrollTop: $("#contact").offset().top-(15*vh)},
+            'slow');
+    } else {
+        $('html,body').animate({
+            scrollTop: $("#contact").offset().top-(10*vh)},
+            'slow');
+        $("#mobile-nav-extension").height(0);
+    }
 });
 
 $("#nav-contact-button").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#contact").offset().top-(15*vh)},
-        'slow');
+    if ($( window ).width() > 768) {
+        $('html,body').animate({
+            scrollTop: $("#contact").offset().top-(15*vh)},
+            'slow');
+    } else {
+        $('html,body').animate({
+            scrollTop: $("#contact").offset().top-(10*vh)},
+            'slow');
+    }
 });
 
 $("#nav-home-button").click(function() {
@@ -165,15 +253,67 @@ $("#nav-home-button").click(function() {
 });
 
 $("#nav-about-button").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#about").offset().top-(15*vh)},
-        'slow');
+    if ($( window ).width() > 768) {
+        $('html,body').animate({
+            scrollTop: $("#about").offset().top-(15*vh)},
+            'slow');
+    } else {
+        $('html,body').animate({
+            scrollTop: $("#about").offset().top-(10*vh)},
+            'slow');
+    }
 });
 
 $("#nav-work-button").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#work").offset().top-(15*vh)},
-        'slow');
+    if ($( window ).width() > 768) {
+        $('html,body').animate({
+            scrollTop: $("#work").offset().top-(15*vh)},
+            'slow');
+    } else {
+        $('html,body').animate({
+            scrollTop: $("#work").offset().top-(10*vh)},
+            'slow');
+    }
+});
+
+$(".about-cmc").click(function() {
+    if ($(".about-cmc-e").height() == 0) {
+        $(".about-cmc-e").height(7.75*vh);
+    } else if ($(".about-cmc-e").height() > (6.5*vh)) {
+        $(".about-cmc-e").height(0);
+    }
+});
+
+$(".about-nyc").click(function() {
+    if ($(".about-nyc-e").height() == 0) {
+        $(".about-nyc-e").height(4.75*vh);
+    } else if ($(".about-nyc-e").height() > (4*vh)) {
+        $(".about-nyc-e").height(0);
+    }
+});
+
+$(".about-rap").click(function() {
+    if ($(".about-rap-e").height() == 0) {
+        $(".about-rap-e").height(7.8*vh);
+    } else if ($(".about-rap-e").height() > (6*vh)) {
+        $(".about-rap-e").height(0);
+    }
+});
+
+$(".about-sci").click(function() {
+    if ($(".about-sci-e").height() == 0) {
+        $(".about-sci-e").height(7.8*vh);
+    } else if ($(".about-sci-e").height() > (6*vh)) {
+        $(".about-sci-e").height(0);
+    }
+});
+
+$(".about-book").click(function() {
+    if ($(".about-book-e").height() == 0) {
+        $(".about-book-e").height(7.8*vh);
+    } else if ($(".about-book-e").height() > (6*vh)) {
+        $(".about-book-e").height(0);
+    }
 });
 
 $(document).ready(function(){
