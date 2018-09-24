@@ -151,8 +151,8 @@ $(".contact-email").click(function(){
 
   $("#mobile-nav-extend").click(function() {
       if ($("#mobile-nav-extension").height() == 0){
-          $("#mobile-nav-extension").height(30.35*vh);
-      } else if ($("#mobile-nav-extension").height() > (29*vh)){
+          $("#mobile-nav-extension").height(32*vh);
+      } else if ($("#mobile-nav-extension").height() > (30*vh)){
           $("#mobile-nav-extension").height(0);
       }
 
